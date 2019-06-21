@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started</title>
+  </head>
+  <body>
+    <header id="universal-header"></header>
+    <div id="root"></div>
+    <div id="chat"></div>
+
+    <script src="main.js"></script>
+
+    <script type="text/javascript">
+      // DS.render(DS.factory('Text', { size: '2XL' }, 'MESSAGE RECEIVED, LA JOLLA'), 'root');
+      DS.render(DS.factory('UniversalHeader'), 'universal-header');
+      DS.render(DS.factory('Alert', {}, 'AHOY WORLD'), 'root');
+      DS.render(DS.factory('Chat', { fixed: true }), 'chat');
+    </script>
+  </body>
+</html>
