@@ -13,6 +13,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@umich-lib/core": "^1.0.0-beta.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
