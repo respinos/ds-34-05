@@ -2,10 +2,19 @@
 <html>
   <head>
     <title>Getting Started</title>
+    <style id="global-stylesheet"></style>
   </head>
   <body>
     <header id="universal-header"></header>
-    <div id="root"></div>
+
+    <article>
+      <h1>Ahoy ahoy!</h1>
+      <div id="root"></div>
+      <p>Haunted is all about writing plain functions that can contain their own state. The follow docs is divided between creating components (the functions) and using hooks the state.</p>
+    </article>
+
+
+
     <div id="chat"></div>
 
     <script src="main.js"></script>
@@ -19,9 +28,10 @@
 
     <script type="text/javascript">
       // DS.render(DS.factory('Text', { size: '2XL' }, 'MESSAGE RECEIVED, LA JOLLA'), 'root');
-      // DS.load('universal-header', 'UniversalHeader');
+      // DS.load('global-stylesheet', 'GlobalStylesheet');
+      DS.load('universal-header', 'UniversalHeader');
       DS.load('root', 'Alert', {}, 'AHOY WORLD');
-      // DS.load('Chat', { fixed: true }), 'chat');
+      DS.load('chat', 'Chat', { fixed: true });
     </script>
   </body>
 </html>
