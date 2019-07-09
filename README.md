@@ -4,20 +4,12 @@
 
 Build a complete UMD distribution for umich-lib-ui by building a "library" with webpack.
 
-This experiment exposes a `DS` global which exports two methods:
+This experiment: set up `index.js` to explicitly load components from `umich-lib-ui` to take advantage of webpack chunking.
+
+This experiment exposes a `DS` global which exports a method:
 
 ```
-var component = DS.factory(componentName, props, text)
-
-var textComponent = DS.factory('Text', { size: '2XL', 'Hello world'})
-```
-
-and
-
-```
-DS.render(component, 'id');
-
-DS.render(textComponent, 'root');
+DS.load('root', 'Alert', {}, 'AHOY WORLD');
 ```
 
 ## Running
